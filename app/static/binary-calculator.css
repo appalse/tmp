@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  color: darkblue;
+}
+
+.main {
+    margin: auto;
+    width: 33%;
+}
+
+#res {
+    background-color: lightsteelblue;
+    border: solid 1px grey;
+    border-radius: 8px;
+    height: 48px;
+    font-size: 20px;
+}
+
+#btn0, #btn1 {
+    background-color: lightskyblue;
+    color: brown;
+}
+
+#btnClr, #btnEql {
+    background-color: darkslateblue;
+    color: white;
+}
+
+#btnSum, #btnSub, #btnMul, #btnDiv {
+    background-color: grey;
+    color: white;
+}
+
+.btn {
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+    border-radius: 5px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(104,104,104);
+    padding: 10px 0;
+}

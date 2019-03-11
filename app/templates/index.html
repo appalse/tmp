@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Appalse</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+	<header class="header">
+		<div class="header__btns">
+			<button class="header__btn" id="header-btn-about"><a href="">About me</a></button>
+			<button class="header__btn" id="header-btn-projects"><a href="#projects">Projects</a></button>
+			<button class="header__btn" id="header-btn-blog"><a href="#blog">Blog</a></button>
+			<button class="header__btn" id="header-btn-contacts"><a href="#contacts">Contacts</a></button>
+		</div>
+	</header>
+
+	<footer class="footer">&copy; appalse.com 2019</footer>
+
+	<main class="main">
+
+		<div id="aboutme"></div>
+		<section class="main__subsection">
+			<h1 class="subsection__header">About me:</h1>
+			<p class="aboutme__text"> Hello, my name is appalse. I'm a developer.  
+				Please, see below my projects and my blog. 
+				In order to contact me you could use contact form in the bottom of this page or write an email. 
+			</p>	
+		</section>
+
+		<div id="projects"></div>
+		<section class="main__subsection">	
+			<h1 class="subsection__header">My projects:</h1>
+			<div class="projects">
+				<div class="project project__memoji-game">
+					<a href="memoji">
+						<p class="caption">Memoji web-game</p>
+						<div class="icon"></div>				
+					</a>
+				</div>
+				<div class="project project__binary-calculator">
+					<a href="binary-calculator">
+						<p class="caption">Binary calculator online</p>
+						<div class="icon"></div>
+					</a>		
+				</div>
+			</div>	
+		</section>
+
+		<div id="blog"></div>
+		<section class="main__subsection">
+			<h1 class="subsection__header">My blog:</h1>
+			<ul class="articles">
+				<li class="article article__opengl">
+					<p class="caption"><a href="https://natalia-kutina.livejournal.com/8454.html">How to use OpenGL in Ubuntu</a></p>
+				</li>
+				<li class="article article__feynman-tufte">
+					<p class="caption"><a href="https://natalia-kutina.livejournal.com/8331.html">The Feynman-Tufte Principle</a></p>
+				</li>
+				<li class="article article__virtualenv">
+					<p class="caption"><a href="https://natalia-kutina.livejournal.com/7278.html">About python virtualenv</a></p>
+				</li>
+				<li class="article article__cpp-types">
+					<p class="caption"><a href="https://natalia-kutina.livejournal.com/7769.html">C++ types</a></p>
+				</li>
+			</ul>
+		</section>
+
+		<div id="contacts"></div>
+		<section class="main__subsection">
+			<h1 class="subsection__header">Contacts:</h1>
+			<div class="subsection__contacts">				
+				<ul class="contact-list">
+					<li class="caption"><a href="https://github.com/appalse"><i class="contact-icon fab fa-github"></i>Github</a></li>
+					<li class="caption"><a href="mailto:kutina_nat@mail.ru"><i class="contact-icon fas fa-envelope"></i>Email</a></li>
+					<li class="caption"><a href="skype:nathalie_app?chat"><i class="contact-icon fab fa-skype"></i>Skype</a></li>
+					<li class="caption"><a href="https://www.linkedin.com/in/nataliakutina"><i class="contact-icon fab fa-linkedin-in"></i>LinkedIn</a></li>
+				</ul>	
+
+				<!---			
+				<form class="contact-form" action="mailto:kutina_nat@mail.ru" method="post" enctype="text/plain">
+					<h2 class="contact-form__header">Contact form:</h2>
+					<div class="form-item form__name">
+						<label for="contact-name">Your name:</label>
+						<input  type="text" 
+								id="contact-name">
+					</div>
+					<div class="form-item form__email">
+						<label for="contact-email">Your e-mail:</label>
+						<input 	type="text" 
+								id="contact-email">
+					</div>
+					<div class="form-item form__message">
+						<label for="contact-message">Your message:</label>
+						<textarea 	name="message-text" 
+									id="contact-message" 
+									cols="40" rows="5"></textarea>
+					</div>
+					<button class="form-btn">Send</button>
+				</form>
+				--->
+			</div>
+		</section>
+
+	</main>
+
+	<script src="{{ url_for('static', filename='script.js') }}" type="text/javascript"></script>
+</body>
+</html>
