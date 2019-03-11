@@ -1,0 +1,5 @@
+myapp.py
+myapp.pyc
+/cgi-bin/*
+/log/*
+/www/*
